@@ -9,9 +9,19 @@ default: Date.now
     },
 
     exercises: 
+    {
+        type: {
+            type: String,
+            trim: true,
+            required: "Type of exercise"
+        },
+
+        
+    }
 
 })
 
+// --------------
 const transactionSchema = new Schema({
   name: {
     type: String,
